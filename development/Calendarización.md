@@ -1,4 +1,5 @@
-Widget:
+Widdget:
+
 - Pantalla de usuario (inicio)
 - Pantalla de diálogo
 - Pantalla de oftalmoscopía - Otoscopía
@@ -12,4 +13,3 @@ Widget:
 * OFT: Excena de llevar tonómetro a ojo de paciente
 * OFT: Escena de ajustar los semicirculos
 
-esto se ha modificado
