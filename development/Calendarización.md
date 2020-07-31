@@ -11,3 +11,5 @@ Widget:
 * OFT: Crear widget con elementos para tonometría
 * OFT: Excena de llevar tonómetro a ojo de paciente
 * OFT: Escena de ajustar los semicirculos
+
+esto se ha modificado
