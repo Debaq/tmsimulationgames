@@ -45,6 +45,8 @@ class RootWidget(BoxLayout):
 
         # se agregan los widgets principales
 
+class MenuBar(BoxLayout):
+    pass
 
 
 class MainApp(App):

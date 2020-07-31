@@ -32,7 +32,5 @@ def rgb_Per(R,G,B,A=255):
     
     
 
-
-
 if __name__ == "__main__":
     print(rgb_Per(136,14,79))
