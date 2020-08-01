@@ -1,11 +1,107 @@
-<MenuBar>:
-    Button:
-        id: f_but
-    TextInput:
-        text: f_but.state
+#################################################################
+#                                                               #
+#                  NOMBRE PROYECTO : tmsimulation               #
+#                   VER. 20.7.31 - GUI Kivy                     #
+#                    NOMBRE VER. : TSG                          #
+#        DESAROLLADORES : NICOLÁS QUEZADA QUEZADA               #
+#                       : CRISTIAN LEIVA FERNÁNDEZ              #
+#                                                               #
+#################################################################
 
-<MySecondWidget>:
-    Button:
-        id: s_but
-    TextInput:
-        text: s_but.state
+
+<Btn@Button>:
+    background_color: 0,0,0,0
+    canvas.before:
+        Color:
+            rgba: (1,.4,.4,1) if self.state=='normal' else (1,.7,.7,1) 
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [5,]
+    text_size: self.size
+    font_size: '10sp'
+    markup: True
+    halign: 'center'
+    valign: 'center'
+    text:'Boton'
+
+<LoginInput@TextInput>:
+    size_hint: (1, None)
+    height: 30
+    multiline: False
+
+    
+
+<TitleWidget>:
+    orientation: 'horizontal'
+    spacing:10
+    size:1, 20
+    size_hint:1, None
+    canvas:
+        Color:
+            rgba: 0, .737, .831, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    
+<CenterWidget>:
+    orientation: 'horizontal'
+    spacing:10
+    size_hint:1, .7
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+
+<MenuWidget>:
+    orientation: 'horizontal'
+    spacing:10
+    size_hint:1, .3
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+
+<Interface>:
+    id: layout
+    orientation: 'vertical'
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.pos
+
+<Login>:
+    orientation: 'vertical'
+    spacing:6
+    size_hint:.4, .8
+
+
+    Label:    
+        size_hint: (1, None)
+        height: 60        
+        Image:
+            center: self.parent.center
+            source: 'user_login.png'
+    
+    LoginInput:
+        id:userInput
+        hint_text: "Usuario"
+
+    LoginInput:
+        id:passwordInput
+        password:True
+        password_mask: '+'
+        hint_text: "Contraseña"
+    
+    #Btn:
+    #    size_hint: (1, None)
+    #    height: 20
+    #    text: "Ingresar"
