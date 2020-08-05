@@ -77,7 +77,7 @@ class CenterWidget(BoxLayout):
         button = Btn(text="ingresar", size_hint=(1,1), height=20,on_release=self.removePages)
         self.removePages()
         #button.bind(on_release=self.loginMeth)
-        self.login.add_widget(button)
+        #self.login.add_widget(button)
         
         self.add_widget(BoxLayout())
         self.add_widget(self.login)
