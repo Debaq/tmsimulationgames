@@ -27,7 +27,7 @@ def rgb_Per(R,G,B,A=255):
     for a in rgba:
         result = (a/255)
         out.append(result)
-    
+
     return (str(out).strip('[]'))
     
     
