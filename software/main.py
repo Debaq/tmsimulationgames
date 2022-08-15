@@ -18,8 +18,7 @@ def titleVer():
     """
     title = "TSG"
     ver = 0.1
-    out = title+" "+str(ver)
-    return out
+    return f"{title} {ver}"
 
 
 # ==> LIBRERIAS BÁSICAS
